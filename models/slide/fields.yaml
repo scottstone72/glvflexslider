@@ -1,0 +1,43 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+        hidden: true
+
+    user_details_section:
+        label: User a New Slide
+        type: section
+        comment: Create a new slide that can be shared with more than one slider.
+
+    title:
+        label: Title
+        type: text
+        span: left
+
+    company:
+        label: Company Name
+        type: text
+        span: left
+
+    slogan:
+        label: Company Slogan
+        type: text
+        span: right
+
+    html_content:
+        label: Add Custom Markup
+        type: richeditor
+        size: huge
+        span: left
+
+    slide_image:
+        label: Slide Image
+        type: fileupload
+        mode: image
+        span: right
+        imageWidth: 600
+        imageHeight: 180

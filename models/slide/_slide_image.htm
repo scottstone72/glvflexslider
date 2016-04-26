@@ -1,0 +1,9 @@
+<?php if ($record->slide_image): ?>
+
+    <img src="<?= $record->slide_image->getThumb(120, 40, 'crop') ?>" />
+
+<?php else: ?>
+
+    <img src="http://placehold.it/80x80" />
+
+<?php endif ?>

@@ -1,0 +1,23 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+        invisible: true
+
+    slide_image:
+        label: Image
+        type: partial
+        path: ~/plugins/stone/glvflexslider/models/slide/_slide_image.htm
+        sortable: false
+        width: 20%
+
+    title:
+        label: Title
+        searchable: true
+
+    description:
+        label: Decsription

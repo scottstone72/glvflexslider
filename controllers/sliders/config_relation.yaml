@@ -1,0 +1,13 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+slides:
+    label: Slides
+
+    view:
+        form: $/stone/glvflexslider/models/slide/fields.yaml
+        list: $/stone/glvflexslider/models/slide/columns.yaml
+        toolbarPartial: relation_toolbar
+
+#    deferredBinding: true

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Slide
+
+# Model Form Field configuration
+form: $/stone/glvflexslider/models/slide/fields.yaml
+
+# Model Class name
+modelClass: Stone\GlvFlexSlider\Models\Slide
+
+# Default redirect location
+defaultRedirect: stone/glvflexslider/slides
+
+# Create page
+create:
+    title: Create Slide
+    redirect: stone/glvflexslider/slides/update/:id
+    redirectClose: stone/glvflexslider/slides
+
+# Update page
+update:
+    title: Edit Slide
+    redirect: stone/glvflexslider/slides
+    redirectClose: stone/glvflexslider/slides
+
+# Preview page
+preview:
+    title: Preview Slide

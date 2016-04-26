@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: GLV FlexSlider
+
+# Model Form Field configuration
+form: $/stone/glvflexslider/models/slider/fields.yaml
+
+# Model Class name
+modelClass: Stone\GlvFlexSlider\Models\Slider
+
+# Default redirect location
+defaultRedirect: stone/glvflexslider/sliders
+
+# Create page
+create:
+    title: Create GLV FlexSlider
+    redirect: stone/glvflexslider/sliders/update/:id
+    redirectClose: stone/glvflexslider/sliders
+
+# Update page
+update:
+    title: Edit GLV FlexSlider
+    redirect: stone/glvflexslider/sliders
+    redirectClose: stone/glvflexslider/sliders
+
+# Preview page
+preview:
+    title: Preview GLV FlexSlider

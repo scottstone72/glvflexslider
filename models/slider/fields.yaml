@@ -1,0 +1,37 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+        hidden: true
+
+    user_details_section:
+        label: Create a New Slider
+        type: section
+        comment: Create a new slider that can have as many slides as you create.
+
+    name:
+        label: Name
+        type: text
+        span: left
+
+    slug:
+        label: Slug
+        preset:
+            field: name
+            type: slug
+        span: right
+
+    description:
+        label: Description
+        type: textarea
+        size: tiny
+        commentAbove: (Optional)
+
+    slides:
+        label: Slides
+        type: partial
+        path: $/stone/glvflexslider/controllers/sliders/_field_slides.htm

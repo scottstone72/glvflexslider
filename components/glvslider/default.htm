@@ -1,0 +1,15 @@
+<div id="flex_wrap">
+    {% set slides = __SELF__.cameraSlides %}
+    <ul class="slides">
+        {% if slides %}
+        {% for slide in slides %}
+        <li class="flex-caption">
+            <img src="{{ slide.slide_image.path }}" alt=""/>
+            {{ slide.title }} <br>
+            {{ slide.description }}
+        </li>
+        {% endfor %}
+        {% endif %}
+
+    </ul>
+</div><!-- #flex_wrap -->

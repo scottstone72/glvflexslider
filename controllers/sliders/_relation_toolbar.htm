@@ -1,0 +1,22 @@
+<div data-control="toolbar" data-disposable="">
+
+    <a data-control="popup" data-size="huge" data-handler="onRelationButtonAdd" href="javascript:"
+       class="btn btn-sm btn-primary oc-icon-code">
+        <?php echo e(trans('Add Slide')) ?>
+    </a>
+
+    <button class="btn btn-sm btn-default oc-icon-trash-o control-disabled"
+            onclick="$(this).data('request-data', {
+            checked: $('#Sliders-update-RelationController-slides-view .control-list').listWidget('getChecked')
+            })"
+            disabled=""
+            data-request="onRelationButtonRemove"
+            data-request-confirm="<?php echo e(trans('Are you sure you want to remove this slide?')) ?>"
+            data-trigger-action="enable"
+            data-trigger="#Sliders-update-RelationController-slides-view .control-list input[type=checkbox]"
+            data-trigger-condition="checked"
+            data-stripe-load-indicator="">
+        <?php echo e(trans('Remove')) ?>
+    </button>
+
+</div>
